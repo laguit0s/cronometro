@@ -1,0 +1,70 @@
+@font-face {
+    font-family: digital-7-mono;
+    src: url(fonts/digital_7/digital-7\ \(mono\).ttf);
+}
+
+@font-face {
+    font-family: digital-7;
+    src: url(fonts/digital_7/digital-7.ttf);
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+span {
+    font-family: digital-7-mono;
+    font-size: 8rem;
+    color: rgb(0, 255, 255);
+    text-shadow: 0px 0px 5px;
+    margin: 40px 0px;
+}
+
+.separador-cronometro {
+    font-family: digital-7;
+}
+
+.controlar-tempo {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+button {
+    font-family: 'century gothic';
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 10px;
+    width: 7rem;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px;
+    border: 1px solid rgba(255, 255, 255, 0.384);
+    cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    span {
+        font-size: 6.7rem;
+        margin-bottom: 25px;
+    }
+    button {
+        width: 6rem;
+        font-size: 1rem;
+    }
+    .controlar-tempo {
+        gap: 15px
+    }
+}
+
+button:hover {
+    color: rgb(0, 255, 255);
+    background-color: rgb(22, 22, 22);
+}
